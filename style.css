@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Unbounded', cursive;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background: #2B3467;
+    background: linear-gradient(135deg, #2B3467, #303841);
+    color: #bbb;
+    position: relative;
+} 
+#thefile{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    background: #303841;
+}
+label.file{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    background: #2B3467;
+    color: #bbb;
+    font-size: 1.25em;
+    font-weight: 700;
+    box-shadow: 0 20px 60px #272727;
+    cursor: pointer;
+    z-index: 99999;
+}
+label.file:hover{
+    background: #001253;
+    transform: translate3d(-50%, -55%, 0);
+} 
+label.file:active{
+    background: #020b2c;
+    transform: translate3d(-50%, -45%, 0);
+}
+label.file.normal{
+    transform: translate3d(10%, 50%, 0);
+    padding: 0.2rem 2rem;
+    font-size: 1rem;
+    top: 0;
+    left: 0;
+}
+#canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+audio{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: calc(100% - 20px);
+}
